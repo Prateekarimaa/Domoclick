@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/home_automation_converted">
+
+    <ImageView
+        android:id="@+id/dining_room"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/fleures"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/kitchen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/fleures"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:contentDescription="kitchen"
+        android:cropToPadding="false" />
+
+    <TextView
+        android:id="@+id/kitchenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/kitchen"
+        android:layout_alignTop="@+id/kitchen"
+        android:layout_alignRight="@+id/kitchen"
+        android:layout_alignBottom="@+id/kitchen"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Kitchen"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/dining_roomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dining_room"
+        android:layout_alignTop="@+id/dining_room"
+        android:layout_alignRight="@+id/dining_room"
+        android:layout_alignBottom="@+id/dining_room"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Dining Room"
+        android:textColor="#ffffff" />
+
+
+
+
+</RelativeLayout>
