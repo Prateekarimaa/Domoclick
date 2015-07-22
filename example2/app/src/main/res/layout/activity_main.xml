@@ -19,7 +19,8 @@
         android:src="@drawable/fleures"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick=".MainActivity2Kitchen"/>
 
     <ImageView
         android:id="@+id/kitchen"
@@ -59,7 +60,31 @@
         android:text="Dining Room"
         android:textColor="#ffffff" />
 
+    <com.ecogelec.example.CircularImageView
+        android:id="@+id/img_circular"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:border="true"
+        android:src="@drawable/fleures"
+        app:border_color="#c0c0c0"
+        app:border_width="4dp"
+        app:shadow="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:id="@+id/Living_roomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_circular"
+        android:layout_alignLeft="@+id/img_circular"
+        android:layout_alignRight="@+id/img_circular"
+        android:layout_alignBottom="@+id/img_circular"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Living Room"
+        android:textColor="#ffffff" />
 
 
 </RelativeLayout>
